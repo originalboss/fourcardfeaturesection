@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+div.content{
+    display: flex;
+    flex-flow: column;
+    width: 375px;
+    justify-content: space-between;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 25px;
+    position: relative;
+    margin-bottom: -15px;
+}
+
+h2{
+    font-weight: 600;
+}
+
+p{
+    font-weight: 200;
+    font-size: 15px;
+}
+
+div.text p{
+    text-align: center;
+    width: 300px;
+}
+
+div.text{
+    margin: 0 auto;
+}
+
+div.cards{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+     position: relative;
+    margin-bottom: -315px; 
+    height: 950px;
+}
+
+div.card{
+
+    -webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.75);
+height: 210px;
+margin-top: 10px;
+
+
+}
+
+
+div.card h2, div.card p{
+    
+    margin-left: 15px;
+    width: 290px;
+}
+
+div.cardone{
+    border-top: hsl(180, 62%, 55%) solid 5px;
+    img{
+        position: absolute;
+        margin-left:290px;
+        scale: .9;
+    }
+
+}
+
+div.cardtwo{
+    border-top: hsl(0, 78%, 62%) solid 5px;
+    img{
+        position: absolute;
+        margin-left:290px;
+        scale: .9;
+    }
+
+}
+
+div.cardthree{
+    border-top: hsl(34, 97%, 64%) solid 5px;
+    img{
+        position: absolute;
+        margin-left:290px;
+        scale: .9;
+    }
+
+}
+
+div.cardfour{
+    border-top: hsl(212, 86%, 64%) solid 5px;
+    img{
+        position: absolute;
+        margin-left:290px;
+        scale: .9;
+    }
+
+}
+
+@media screen  and (min-width:1024px) {
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+    
+    
+    }
+
+    
+    div.content{
+        display: flex;
+        flex-flow: column;
+        width: 1024px;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1{
+        font-weight: 200;
+        font-size: 25px;
+        position: relative;
+        margin-bottom: -15px;
+    }
+    
+    h2{
+        font-weight: 600;
+    }
+    
+    p{
+        font-weight: 200;
+        font-size: 15px;
+    }
+    
+    div.text p{
+        text-align: center;
+        width: 300px;
+    }
+    
+    div.text{
+        margin: 0 auto;
+        position: relative;
+        margin-top: 200px;
+        margin-bottom: -10px;
+    
+    }    
+    div.cards{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 105px);
+        grid-template-areas: 
+        ". redd ."
+        "cyann redd bluee"
+        "cyann orangee bluee"
+        ". orangee .";
+        gap: 20px;
+    
+    }
+    
+    div.card{
+    
+        -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.75);
+    height: 210px;
+    margin-top: 50px;
+    
+    
+    }
+    
+    
+    div.card h2, div.card p{
+        
+        margin-left: 15px;
+        width: 290px;
+    }
+    
+    div.cardone{
+
+        
+        grid-area: cyann;
+        border-top: hsl(180, 62%, 55%) solid 5px;
+        img{
+            position: absolute;
+            margin-left:230px;
+            scale: .9;
+        }
+
+    
+    }
+    
+    div.cardtwo{
+        grid-area: redd;
+        align-items: end;
+        border-top: hsl(0, 78%, 62%) solid 5px;
+        img{
+            position: absolute;
+            margin-left:230px;
+            scale: .9;
+        }
+    
+    }
+    
+    div.cardthree{   
+        grid-area: orangee;
+        border-top: hsl(34, 97%, 64%) solid 5px;
+        img{
+            position: absolute;
+            margin-left:230px;
+            scale: .9;
+        }
+    
+    }
+    
+    div.cardfour{
+        grid-area: bluee;
+        border-top: hsl(212, 86%, 64%) solid 5px;
+        img{
+            position: absolute;
+            margin-left:230px;
+            scale: .9;
+        }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+    
+}
